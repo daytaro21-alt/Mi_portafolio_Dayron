@@ -1,0 +1,185 @@
+/* Configuraciones generales */
+:root {
+    --color-primario: #1A365D;
+    /* Azul oscuro corporativo */
+    --color-secundario: #2B6CB0;
+    /* Azul medio */
+    --color-fondo: #FFFFFF;
+    --color-fondo-claro: #F7FAFC;
+    /* Gris muy claro para contrastar secciones */
+    --color-texto: #2D3748;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--color-primario);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #90CDF4;
+}
+
+/* Secciones Generales */
+.seccion {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-claro {
+    background-color: var(--color-fondo-claro);
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h2 {
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Hero Section (Presentación) */
+.hero {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    color: #90CDF4;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Tarjetas (Formación) */
+.tarjeta {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--color-secundario);
+}
+
+/* Cuadrícula de Proyectos */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-proyecto {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-proyecto h3 {
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+/* Placeholder para las imágenes de los proyectos */
+.placeholder-imagen {
+    background-color: #E2E8F0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    font-style: italic;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Logros */
+.lista-logros {
+    list-style-position: inside;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lista-logros li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--color-secundario);
+}
+
+/* CV y Botón */
+.centrado {
+    text-align: center;
+}
+
+.boton-descarga {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-secundario);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-descarga:hover {
+    background-color: var(--color-primario);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2D3748;
+    color: white;
+}
